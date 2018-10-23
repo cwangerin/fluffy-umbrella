@@ -33,9 +33,6 @@ Briefly describe a problem that your team would like to solve.
 Ancestry Tree. Will hold birth, death, relationship data.
 Describe at a high level a program that could solve that problem.
 
-# How many contacts does John need to go through to get in touch with Sarah?
-This problem creates a graph from individuals and their contact lists. A question we would like to answer what is the least number of contacts a specified person would need to go through to get in touch with someone else, if that is even possible. The way we would solve it is traversing through the graph in a depth first manner until that person is found, then optimizing until the least number of contact touches is determined.
-
 
 ## Questions to answer for Exercise #2
 
@@ -45,10 +42,8 @@ This problem creates a graph from individuals and their contact lists. A questio
 
 2. Output: Describe the output your program will produce.  Include and example format of the output produced.
 When requested, the program will output data on a person's relationships, current status, age, birth date, and if unlucky enough, death date. Example format will be as follows:
-Requesting data on John Doe...
-John Doe - Age: 28 Alive, Marital status: Single, Birth Date: January 1, 1990
-Requesting data on Mary Jane...
-Mary Jane - Age: 30 Alive, Marital status: Married to Peter Parker, Birth Date: UNKNOWN
+John Doe - Age: 28, Marital status: Single, Birth Date: January 1, 1990
+
 
 3. Input: Describe the data that is needed to solve your problem. Include an example format of the input data.
 
@@ -59,7 +54,7 @@ Mary Jane - Age: 30 Alive, Marital status: Married to Peter Parker, Birth Date: 
 
 
 5. Types List: Break your solution idea down into units that you think can be implemented with a single class.
-
+Each person will be represented by a Person Node with parents, spouse, and children fields that serve as the connections to the rest of the tree. The Person class will also store all relevant info of their personal life such as age, martial status, birth date, and death date. There will also be a Main class that the user interacts with to add new people or print the tree.
 
 
 Name each interface or class and briefly describe its function or purpose.
